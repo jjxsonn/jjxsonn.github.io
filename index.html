@@ -35,7 +35,7 @@
         width: 300px; 
         height: auto; 
         display: block;
-        border-radius: 2px;
+        border-radius: 12px;
         filter: grayscale(10%) contrast(105%);
         /* Forces the browser to respect the portrait shape */
         aspect-ratio: auto; 
@@ -74,11 +74,11 @@
         transition: all 0.2s ease-in-out; 
     }
     
-    .btn:hover { 
-        background: #00153d; 
-        box-shadow: 0 5px 15px rgba(0,32,91,0.3);
-        transform: translateY(-1px);
-    }
+   .btn {
+    /* ... existing code ... */
+    background: rgba(0, 32, 91, 0.9); /* Slightly transparent */
+    backdrop-filter: blur(5px);
+}
 
     /* Content Sections */
   section { 
