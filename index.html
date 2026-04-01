@@ -75,41 +75,6 @@
             padding: 22px 0 36px;
         }
 
-        .topbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 18px;
-        }
-
-        .chip-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .chip {
-            display: inline-flex;
-            align-items: center;
-            padding: 8px 13px;
-            border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.22);
-            background: rgba(255, 255, 255, 0.03);
-            color: var(--text);
-            font-family: "JetBrains Mono", monospace;
-            font-size: 0.76rem;
-            text-decoration: none;
-            letter-spacing: 0.02em;
-            transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
-        }
-
-        .chip:hover {
-            transform: translateY(-1px);
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(255, 255, 255, 0.34);
-        }
-
         .hero {
             position: relative;
             display: grid;
@@ -490,11 +455,6 @@
                 padding-top: 12px;
             }
 
-            .topbar {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
             .hero,
             .card {
                 padding: 18px;
@@ -518,16 +478,6 @@
 </head>
 <body>
     <div class="page">
-        <div class="topbar">
-            <div class="chip-row">
-                <a class="chip" href="#top">Home</a>
-                <a class="chip" href="#track">Track Record</a>
-                <a class="chip" href="#skills">Expertise</a>
-                <a class="chip" href="#experience">Experience</a>
-            </div>
-            <a class="chip" href="#contact">Contact</a>
-        </div>
-
         <header class="hero" id="top">
             <div class="name-backdrop" aria-hidden="true">Jaxson Matheny</div>
             <div class="hero-copy">
