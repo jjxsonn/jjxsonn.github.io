@@ -81,7 +81,7 @@
             grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
             gap: 28px;
             align-items: start;
-            padding: 26px 30px 182px;
+            padding: 92px 30px 182px;
             border-radius: 32px;
             border: 1px solid var(--line-soft);
             background:
@@ -119,7 +119,8 @@
         }
 
         .hero-copy,
-        .hero-portrait {
+        .hero-portrait,
+        .hero-actions {
             position: relative;
             z-index: 3;
         }
@@ -197,8 +198,11 @@
             margin-top: 0;
         }
 
-        .hero-copy .actions {
-            margin-bottom: 12px;
+        .hero-actions {
+            position: absolute;
+            top: 26px;
+            left: 30px;
+            z-index: 5;
         }
 
         .button {
@@ -447,6 +451,21 @@
                 margin-left: 0;
                 width: min(100%, 350px);
             }
+
+            .hero-actions {
+                position: static;
+                top: auto;
+                left: auto;
+                order: 3;
+            }
+
+            .hero-copy {
+                order: 1;
+            }
+
+            .hero-portrait {
+                order: 2;
+            }
         }
 
         @media (max-width: 700px) {
@@ -462,6 +481,7 @@
             }
 
             .hero {
+                padding-top: 18px;
                 padding-bottom: 118px;
             }
 
@@ -481,11 +501,6 @@
         <header class="hero" id="top">
             <div class="name-backdrop" aria-hidden="true">Jaxson Matheny</div>
             <div class="hero-copy">
-                <div class="actions">
-                    <a class="button primary" href="Resume_Matheny.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                    <a class="button secondary" href="https://www.linkedin.com/in/jaxson-matheny" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a class="button secondary" href="https://github.com/jjxsonn" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
                 <p class="kicker">Applied AI/Data Science + MIS / Business Cybersecurity</p>
                 <p class="degree">WVU Chambers Honors '29</p>
                 <h1 class="name">Jaxson<br>Matheny</h1>
@@ -510,6 +525,12 @@
 
             <div class="hero-portrait">
                 <img src="headshot.jpeg" alt="Jaxson Matheny headshot" class="portrait">
+            </div>
+
+            <div class="actions hero-actions">
+                <a class="button primary" href="Resume_Matheny.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a class="button secondary" href="https://www.linkedin.com/in/jaxson-matheny" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="button secondary" href="https://github.com/jjxsonn" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </header>
 
